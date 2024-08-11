@@ -1,0 +1,53 @@
+{
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.1.0"
+    },
+    {
+      "module_name": "@minecraft/common",
+      "version": "1.2.0"
+    }
+    /*{
+      "module_name": "@minecraft/server-admin",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-gametest",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-net",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "@minecraft/server-editor",
+      "version": "0.1.0-beta"
+    },
+    {
+      "module_name": "@minecraft/debug-utilities",
+      "version": "1.0.0-beta"
+    }*/
+  ],
+  "format_version": 2,
+  "header": {
+    "description": "Description of my Sample Behavior Pack",
+    "min_engine_version": [1, 20, 60],
+    "name": "My Sample Behavior Pack",
+    "uuid": "90a8d539-175c-4895-bc8e-cf450d80b54b",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "description": "Description of my module script",
+      "entry": "scripts/main.js",
+      "type": "script",
+      "uuid": "e2867841-4494-4a80-b8d6-8a75e0da0bd5",
+      "version": [1, 0, 0]
+    }
+  ]
+}
