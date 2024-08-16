@@ -48,6 +48,11 @@
       "type": "script",
       "uuid": "e2867841-4494-4a80-b8d6-8a75e0da0bd5",
       "version": [1, 0, 0]
+    },
+    {
+      "type": "data",
+      "uuid": "ad28eda5-b4bc-4806-bdd4-cf03fa348422",
+      "version": [1, 0, 0]
     }
   ]
 }
