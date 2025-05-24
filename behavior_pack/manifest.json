@@ -1,0 +1,30 @@
+{
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0-beta"
+    },
+    {
+      "uuid": "7510cf8b-6df1-4c3d-911e-68b522c199aa",
+      "version": [1, 0, 0]
+    }
+  ],
+  "format_version": 2,
+  "header": {
+    "description": "Description of my Sample Behavior Pack",
+    "min_engine_version": [1, 21, 81],
+    "name": "My Sample Behavior Pack",
+    "uuid": "20a33263-335f-4156-b8ec-fa3f16a23cf1",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "description": "Description of my module script",
+      "entry": "scripts/main.js",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "00048c23-0848-40c1-9f39-b7713d267961",
+      "version": [1, 0, 0]
+    }
+  ]
+}

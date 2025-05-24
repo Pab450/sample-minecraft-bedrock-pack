@@ -1,3 +1,6 @@
 node_modules
-scripts
+behavior_pack/scripts
 .DS_Store
+dist/*
+.env
+!.env.example
