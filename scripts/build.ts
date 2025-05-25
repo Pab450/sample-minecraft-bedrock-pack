@@ -1,25 +1,26 @@
-import esbuild from 'esbuild'
+import esbuild from './esbuild'
+import { createWriteStream } from 'node:fs'
+import { PACK_NAME, PACKS } from './constants'
+import path from 'node:path'
+import archiver from 'archiver'
 
-const externalPackages: string[] = [
-  '@minecraft/server',
-  '@minecraft/server-ui',
-  '@minecraft/server-admin',
-  '@minecraft/server-gametest',
-  '@minecraft/server-net',
-  '@minecraft/server-editor',
-  '@minecraft/debug-utilities',
-]
+esbuild()
+  .then(() => {
+    const writeStream = createWriteStream(
+      path.join('.', 'dist', `${PACK_NAME}.mcaddon`)
+    )
+    const archive = archiver('zip', {
+      zlib: { level: 9 },
+    })
 
-export default () =>
-  esbuild
-    .build({
-      entryPoints: ['src/main.ts'],
-      outfile: 'behavior_pack/scripts/main.js',
-      bundle: true,
-      minify: true,
-      format: 'esm',
-      external: externalPackages,
-    })
-    .catch((error) => {
-      console.error(error)
-    })
+    archive.pipe(writeStream)
+
+    for (const pack of PACKS) {
+      archive.directory(path.join('.', pack), pack)
+    }
+
+    archive.finalize()
+  })
+  .catch((error) => {
+    console.error(error)
+  })

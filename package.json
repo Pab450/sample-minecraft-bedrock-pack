@@ -1,11 +1,10 @@
 {
   "name": "sample-pack",
   "version": "1.0.0",
-  "main": "./scripts/dev.ts",
   "scripts": {
     "prettier:write": "prettier . --write",
-    "dev": "nodemon",
-    "deploy": "ts-node ./scripts/deploy.ts"
+    "dev": "nodemon ./scripts/dev.ts",
+    "build": "ts-node ./scripts/build.ts"
   },
   "author": "",
   "license": "ISC",
