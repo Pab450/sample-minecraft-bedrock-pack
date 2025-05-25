@@ -2,7 +2,7 @@ import dotenv from 'dotenv'
 
 dotenv.config()
 
-const PACK_NAME = process.env.PACK_NAME || 'My Sample Pack'
+const PACK_NAME = process.env.PACK_NAME || 'My Minecraft Bedrock Pack'
 const COM_MOJANG = process.env.COM_MOJANG || '.'
 
 const BEHAVIOR_PACK = 'behavior_pack'
@@ -18,6 +18,7 @@ const EXTERNAL_PACKAGES = [
   '@minecraft/server-net',
   '@minecraft/server-editor',
   '@minecraft/debug-utilities',
+  '@minecraft/diagnostics',
 ]
 
 export {

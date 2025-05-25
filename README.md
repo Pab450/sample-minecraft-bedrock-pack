@@ -1,10 +1,10 @@
-# Sample Minecraft Bedrock Pack
+# Development Template Minecraft Bedrock Pack
 
 This repository provides a ready-to-use development template of a Minecraft Bedrock pack, designed for easy adaptation and development.
 
 ## Features
 
-- **Complete Pack**: Includes both a Behavior Pack and a Resource Pack with preconfigured manifests.
+- **Complete Pack**: Includes both a Behavior Pack and a Resource Pack with pre configured manifests.
 - **Automation**: Build, development, and packaging scripts using `esbuild` and `archiver`.
 - **Hot Reload**: Automatic reload support via `nodemon`.
 

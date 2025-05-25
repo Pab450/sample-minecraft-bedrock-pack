@@ -11,15 +11,15 @@
   ],
   "format_version": 2,
   "header": {
-    "description": "Description of my Sample Behavior Pack",
+    "description": "Description of My Minecraft Bedrock Behavior Pack",
     "min_engine_version": [1, 21, 81],
-    "name": "My Sample Behavior Pack",
+    "name": "My Minecraft Bedrock Behavior Pack",
     "uuid": "20a33263-335f-4156-b8ec-fa3f16a23cf1",
     "version": [1, 0, 0]
   },
   "modules": [
     {
-      "description": "Description of my module script",
+      "description": "Description of my script module",
       "entry": "scripts/main.js",
       "language": "javascript",
       "type": "script",

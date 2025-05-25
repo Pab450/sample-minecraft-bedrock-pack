@@ -1,14 +1,14 @@
 {
-  "name": "sample-pack",
+  "name": "development-template-minecraft-bedrock-pack",
   "version": "1.0.0",
   "scripts": {
     "prettier:write": "prettier . --write",
     "dev": "nodemon ./scripts/dev.ts",
     "build": "ts-node ./scripts/build.ts"
   },
-  "author": "",
+  "author": "pablooo",
   "license": "ISC",
-  "description": "",
+  "description": "Provides a ready-to-use development template of a Minecraft Bedrock pack",
   "devDependencies": {
     "@minecraft/server": "2.0.0-beta.1.21.83-stable",
     "@types/archiver": "^6.0.3",
